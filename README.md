@@ -1,7 +1,7 @@
 
 ## About Project
 
-This project is based on game called Treasure Hunt where players finds the answer with the help of images and clues. The Framework used in this project is NodeJS (framework of javascript) and the database used in this project is MongoDB.This project is made from scratch . 
+This project is **Streaming Platform** where users on stream their podcasts.The Framework used in this project is NodeJS (framework of javascript) and the database used in this project is MongoDB.This project developed from scratch . 
 
 Languages used are-
 - NodeJS
@@ -10,9 +10,13 @@ Languages used are-
 - Javascript
 
 
+## Register Page
+
+In this user can register and their identification would be verify through email.
+
 ## Login Page
 
-In this page player would be given there email and password.By this they have to login in the game.
+In this user can signin the .
 
 ## Home Page
 
