@@ -1,7 +1,7 @@
 
 ## About Project
 
-This project is **Streaming Platform** where users stream their podcasts.The Framework used in this project is NodeJS (framework of javascript) and the database used in this project is MongoDB.This project developed from scratch . 
+This project is **Streaming Platform** where users stream their podcasts.The Framework used in this project is NodeJS (framework of javascript) and the database used in this project is MongoDB.This project is developed from scratch . 
 
 Languages used are-
 - NodeJS
