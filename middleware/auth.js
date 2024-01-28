@@ -12,8 +12,7 @@ const islogout = async (req, res, next) => {
     } else {
       const verifyUser = jwt.verify(token, config.jwtSecret);
 
-      if (verifyUser) {
-      } else {
+      if (!verifyUser) {
         return res.redirect("login");
       }
     }
@@ -38,7 +37,6 @@ const islogin = async (req, res, next) => {
 
       if (verifyUser) {
         return res.redirect("/");
-      } else {
       }
     }
 
