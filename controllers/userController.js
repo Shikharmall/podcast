@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 const config = require('../config/config');
-const cookies = require('cookie');
+//const cookies = require('cookie');
 const subscriberModel = require('../models/subscriberModel');
 
 
