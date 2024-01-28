@@ -54,13 +54,13 @@ const sendVerifyMail= async(name , email , user_id)=>{
             secure:true,
             requireTLS:true,
             auth:{
-                user:'thesarus.2022@gmail.com',
-                pass:'slhqirbjzjgrtcfc'
+                user:process.env.EMAIL_USER,
+                pass:process.env.EMAIL_PASS
             }
         });
 
         const mailOptions = {
-            from : "thesarus.2020@gmail.com",
+            from : process.env.EMAIL_FROM,
             to: email,
             subject:'Email Verification',
             html:'<p>Hi '+name+', </p> <p> Please click on the given link <a href="http://127.0.0.1:3000/verifymail?id='+user_id+'"> Verify </a> to verify your email. </p>  <br> <h4>Thanks , Team The SARUS.</h4>'
@@ -89,13 +89,13 @@ const sendforgotpasswordMail= async(name , email , user_id)=>{
             secure:true,
             requireTLS:true,
             auth:{
-                user:'thesarus.2022@gmail.com',
-                pass:'slhqirbjzjgrtcfc'
+                user:process.env.EMAIL_USER,
+                pass:process.env.EMAIL_PASS
             }
         });
 
         const mailOptions = {
-            from : "thesarus.2020@gmail.com",
+            from : process.env.EMAIL_FROM,
             to: email,
             subject:'Forgot Password',
             html:'<p>Hi '+name+', </p> <p> Please click on the given link <a href="http://127.0.0.1:3000/forgotpaswordedit?id='+user_id+'"> Change Password </a> to change your password. </p>  <br> <h4>Thanks , Team The SARUS.</h4>'

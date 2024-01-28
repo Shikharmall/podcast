@@ -44,7 +44,8 @@ const insertChannel = async(req,res)=>{
             /*image2:req.files.image[1].filename,
             image3:req.files.image[2].filename,*/
             language:req.body.language,
-            age:req.body.age
+            age:req.body.age,
+            season: 1
         });
 
         //const files = req.files;
