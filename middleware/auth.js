@@ -31,8 +31,7 @@ const islogin = async (req, res, next) => {
   try {
     const token = req.cookies.userid;
 
-    if (typeof token === "undefined") {
-    } else {
+    if (typeof token !== "undefined") {
       const verifyUser = jwt.verify(token, config.jwtSecret);
 
       if (verifyUser) {
