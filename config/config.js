@@ -1,5 +1,5 @@
 
-const jwtSecret = process.env.CONFIG_SECRET_KEY;
+const jwtSecret = dd;
 
 module.exports={
   jwtSecret
